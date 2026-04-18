@@ -1,115 +1,159 @@
 <!DOCTYPE html>
-  <html lang="tr">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Gizlilik Politikası - Helal mi?</title>
-      <style>
-          * { margin: 0; padding: 0; box-sizing: border-box; }
-          body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6;
-  color: #333; background: #f5f0e6; padding: 20px; }
-          .container { max-width: 800px; margin: 0 auto; background: #fff; padding: 40px; border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-          h1 { color: #2d5a27; margin-bottom: 10px; }
-          h2 { color: #2d5a27; margin-top: 30px; margin-bottom: 15px; font-size: 1.3em; }
-          h3 { margin-top: 20px; margin-bottom: 10px; font-size: 1.1em; }
-          p { margin-bottom: 15px; }
-          ul { margin: 15px 0 15px 30px; }
-          li { margin-bottom: 8px; }
-          .updated { color: #666; font-size: 0.9em; margin-bottom: 30px; }
-          .contact { background: #f5f0e6; padding: 15px; border-radius: 8px; margin-top: 20px; }
-          a { color: #2d5a27; }
-          .lang-switch { text-align: right; margin-bottom: 20px; }
-          .lang-switch a { margin-left: 10px; text-decoration: none; padding: 5px 10px; border-radius: 4px; background:
-  #f0f0f0; }
-          .lang-switch a.active { background: #2d5a27; color: white; }
-      </style>
-  </head>
-  <body>
-      <div class="container">
-          <div class="lang-switch">
-              <a href="privacy-policy.html">EN</a>
-              <a href="privacy-policy-tr.html" class="active">TR</a>
-              <a href="privacy-policy-ar.html">AR</a>
-              <a href="privacy-policy-id.html">ID</a>
-              <a href="privacy-policy-ms.html">MS</a>
-          </div>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gizlilik Politikası - Helal mi?</title>
+    <style>
+        :root {
+            --primary: #1B5E20;
+            --text: #333;
+            --bg: #f5f5f5;
+            --card-bg: #fff;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        .last-updated {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: var(--primary);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        p { margin-bottom: 15px; }
+        ul {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+        li { margin-bottom: 8px; }
+        .contact-box {
+            background: var(--bg);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+        .contact-box a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .lang-selector {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .lang-selector a {
+            margin-left: 10px;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .lang-selector a.active {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lang-selector">
+            <a href="privacy-policy.html">EN</a>
+            <a href="privacy-policy-tr.html" class="active">TR</a>
+            <a href="privacy-policy-ar.html">AR</a>
+        </div>
 
-          <h1>Gizlilik Politikası</h1>
-          <p class="updated">Son güncelleme: 21 Mart 2026</p>
+        <h1>Gizlilik Politikası</h1>
+        <p class="last-updated">Son güncelleme: 18 Nisan 2026</p>
 
-          <h2>1. Giriş</h2>
-          <p>Helal mi? ("biz" veya "bizim") gizliliğinizi korumaya kararlıdır. Bu Gizlilik Politikası, mobil
-  uygulamamızı kullandığınızda bilgilerinizi nasıl topladığımızı, kullandığımızı ve koruduğumuzu açıklar.</p>
+        <h2>1. Giriş</h2>
+        <p>Helal mi? ("biz") gizliliğinizi korumaya kararlıdır. Bu Gizlilik Politikası, mobil uygulamamızı kullanırken bilgilerinizi nasıl topladığımızı, kullandığımızı ve koruduğumuzu açıklar.</p>
 
-          <h2>2. Topladığımız Bilgiler</h2>
+        <h2>2. Topladığımız Bilgiler</h2>
 
-          <h3>2.1 Görseller</h3>
-          <p>Gıda ürünlerini analiz etmek için uygulamamızı kullandığınızda, içerik etiketlerinin görsellerini geçici
-  olarak işliyoruz. Bu görseller:</p>
-          <ul>
-              <li>Sadece içerik çıkarma ve analiz için kullanılır</li>
-              <li>İşlemden sonra 1 saat içinde otomatik olarak silinir</li>
-              <li>Sunucularımızda kalıcı olarak saklanmaz</li>
-              <li>Üçüncü taraflarla paylaşılmaz</li>
-          </ul>
+        <h3>2.1 Görüntüler</h3>
+        <p>Gıda ürünlerini analiz etmek için uygulamamızı kullandığınızda, içerik etiketlerinin görüntülerini geçici olarak işliyoruz. Bu görüntüler:</p>
+        <ul>
+            <li>Yalnızca içerik çıkarma ve analiz için kullanılır</li>
+            <li>İşlemden sonra 1 saat içinde otomatik olarak silinir</li>
+            <li>Sunucularımızda kalıcı olarak saklanmaz</li>
+            <li>Üçüncü taraflarla paylaşılmaz</li>
+        </ul>
 
-          <h3>2.2 Cihaz Bilgileri</h3>
-          <p>Yerelleştirilmiş içerik sağlamak için cihaz dil tercihlerini toplayabiliriz. Cihaz tanımlayıcıları, konum
-  verileri veya kişisel bilgiler toplamıyoruz.</p>
+        <h3>2.2 Cihaz Bilgileri</h3>
+        <p>Yerel içerik sunmak için cihaz dili tercihlerini toplayabiliriz. Cihaz tanımlayıcıları, konum verileri veya kişisel bilgiler toplamıyoruz.</p>
 
-          <h3>2.3 Analitik</h3>
-          <p>Hizmetimizi geliştirmek için anonim analitikler kullanıyoruz. Bu, toplu kullanım istatistiklerini ve çökme
-  raporlarını içerir. Analitik aracılığıyla kişisel olarak tanımlanabilir bilgi toplanmaz.</p>
+        <h3>2.3 Analitik</h3>
+        <p>Hizmetimizi iyileştirmek için anonim analitik kullanıyoruz. Bu, toplu kullanım istatistiklerini ve çökme raporlarını içerir. Analitik yoluyla kişisel olarak tanımlanabilir bilgi toplanmaz.</p>
 
-          <h2>3. Bilgilerinizi Nasıl Kullanıyoruz</h2>
-          <p>Topladığımız bilgileri şu amaçlarla kullanıyoruz:</p>
-          <ul>
-              <li>Gıda ürünlerinin helal/haram analizini sağlamak</li>
-              <li>İçerik veritabanımızı ve yapay zeka modellerimizi geliştirmek</li>
-              <li>Hataları düzeltmek ve uygulama performansını artırmak</li>
-              <li>Kullanıcı geri bildirimlerine ve raporlarına yanıt vermek</li>
-          </ul>
+        <h2>3. Bilgilerinizi Nasıl Kullanıyoruz</h2>
+        <p>Topladığımız bilgileri şunlar için kullanıyoruz:</p>
+        <ul>
+            <li>Gıda ürünlerinin helal/haram analizini sağlamak</li>
+            <li>İçerik veritabanımızı ve yapay zeka modellerimizi geliştirmek</li>
+            <li>Hataları düzeltmek ve uygulama performansını artırmak</li>
+            <li>Kullanıcı geri bildirimlerine ve raporlarına yanıt vermek</li>
+        </ul>
 
-          <h2>4. Veri Depolama</h2>
-          <p>Analiz geçmişiniz yalnızca cihazınızda yerel olarak saklanır. Sunucularımızda kullanıcı hesapları tutmuyor
-  veya kişisel veriler saklamıyoruz. Yerel geçmişinizi uygulama ayarlarından istediğiniz zaman silebilirsiniz.</p>
+        <h2>4. Veri Depolama</h2>
+        <p>Analiz geçmişiniz yalnızca cihazınızda yerel olarak saklanır. Sunucularımızda kullanıcı hesapları tutmuyor veya kişisel veriler saklamıyoruz. Yerel geçmişinizi uygulama ayarlarından istediğiniz zaman silebilirsiniz.</p>
 
-          <h2>5. Üçüncü Taraf Hizmetleri</h2>
-          <p>Aşağıdaki üçüncü taraf hizmetlerini kullanıyoruz:</p>
-          <ul>
-              <li>Görüntü işleme için OpenAI API</li>
-              <li>Reklamlar için Google AdMob (yalnızca ücretsiz kullanıcılar)</li>
-              <li>Abonelik yönetimi için RevenueCat</li>
-          </ul>
-          <p>Bu hizmetlerin her birinin kendi gizlilik politikaları vardır. Bunları incelemenizi öneririz.</p>
+        <h2>5. Üçüncü Taraf Hizmetleri</h2>
+        <p>Aşağıdaki üçüncü taraf hizmetlerini kullanıyoruz:</p>
+        <ul>
+            <li><strong>Google Cloud Vision API</strong> - Görüntülerden metin çıkarma (OCR) için</li>
+            <li><strong>OpenAI API</strong> - İçerik sınıflandırma için - görüntüler OpenAI sunucularında işlenir ve OpenAI'ın veri saklama politikalarına tabidir</li>
+            <li><strong>Google AdMob</strong> - Reklamlar için (yalnızca ücretsiz kullanıcılar)</li>
+            <li><strong>RevenueCat</strong> - Abonelik yönetimi için</li>
+        </ul>
+        <p>Bu hizmetlerin her birinin kendi gizlilik politikaları vardır. Bunları incelemenizi öneririz.</p>
 
-          <h2>6. Reklamcılık</h2>
-          <p>Ücretsiz kullanıcılar Google AdMob tarafından sunulan reklamları görebilir. Bu reklamlar, alkol, kumar ve
-  flört dahil uygunsuz içerik kategorilerini filtrelemek için yapılandırılmıştır. Reklamsız bir deneyim için Premium'a
-  yükseltebilirsiniz.</p>
+        <h2>6. Reklamcılık</h2>
+        <p>Ücretsiz kullanıcılar Google AdMob tarafından sunulan reklamları görebilir. Bu reklamlar, alkol, kumar ve flört dahil uygunsuz içerik kategorilerini filtrelemek için yapılandırılmıştır. Reklamsız bir deneyim için Premium'a yükseltebilirsiniz.</p>
 
-          <h2>7. Çocukların Gizliliği</h2>
-          <p>Uygulamamız 13 yaşın altındaki çocuklara yönelik değildir. Çocuklardan bilerek kişisel bilgi toplamıyoruz.
-  Bu tür bilgileri yanlışlıkla topladığımıza inanıyorsanız, lütfen bizimle iletişime geçin.</p>
+        <h2>7. Çocukların Gizliliği</h2>
+        <p>Uygulamamız 13 yaşın altındaki çocuklara yönelik değildir. Çocuklardan bilerek kişisel bilgi toplamıyoruz. Bu tür bilgileri yanlışlıkla topladığımıza inanıyorsanız, lütfen bizimle iletişime geçin.</p>
 
-          <h2>8. Haklarınız</h2>
-          <p>Şu haklara sahipsiniz:</p>
-          <ul>
-              <li>Yerel analiz geçmişinizi temizleme</li>
-              <li>Gönderdiğiniz raporların silinmesini talep etme</li>
-              <li>Kişiselleştirilmiş reklamlardan çıkma</li>
-          </ul>
+        <h2>8. Haklarınız</h2>
+        <p>Şu haklara sahipsiniz:</p>
+        <ul>
+            <li>Yerel analiz geçmişinizi temizleme</li>
+            <li>Gönderdiğiniz raporların silinmesini talep etme</li>
+            <li>Kişiselleştirilmiş reklamlardan çıkma</li>
+        </ul>
 
-          <h2>9. Bu Politikadaki Değişiklikler</h2>
-          <p>Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Bu politikanın üst kısmındaki "Son güncelleme"
-  tarihini güncelleyerek değişiklikleri size bildireceğiz.</p>
+        <h2>9. Bu Politikadaki Değişiklikler</h2>
+        <p>Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Bu politikanın üst kısmındaki "Son güncelleme" tarihini güncelleyerek değişiklikleri size bildireceğiz.</p>
 
-          <h2>10. Bize Ulaşın</h2>
-          <p>Bu Gizlilik Politikası hakkında sorularınız varsa, lütfen bize ulaşın:</p>
-          <div class="contact">
-              <a href="mailto:bytelunalabs@gmail.com">bytelunalabs@gmail.com</a>
-          </div>
-      </div>
-  </body>
-  </html>
+        <h2>10. Bize Ulaşın</h2>
+        <p>Bu Gizlilik Politikası hakkında sorularınız varsa, lütfen bize ulaşın:</p>
+        <div class="contact-box">
+            <a href="mailto:bytelunalabs@gmail.com">bytelunalabs@gmail.com</a>
+        </div>
+    </div>
+</body>
+</html>

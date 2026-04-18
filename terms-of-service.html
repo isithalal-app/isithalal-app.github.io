@@ -1,220 +1,168 @@
 <!DOCTYPE html>
-  <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Terms of Service - Is It Halal?</title>
-      <style>
-          * {
-              margin: 0;
-              padding: 0;
-              box-sizing: border-box;
-          }
-          body {
-              font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-              line-height: 1.6;
-              color: #333;
-              background-color: #f5f5f5;
-              padding: 20px;
-          }
-          .container {
-              max-width: 800px;
-              margin: 0 auto;
-              background: white;
-              padding: 40px;
-              border-radius: 12px;
-              box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-          }
-          .lang-switcher {
-              display: flex;
-              justify-content: center;
-              gap: 10px;
-              margin-bottom: 30px;
-              flex-wrap: wrap;
-          }
-          .lang-switcher a {
-              padding: 8px 16px;
-              border: 1px solid #ddd;
-              border-radius: 6px;
-              text-decoration: none;
-              color: #333;
-              font-size: 14px;
-              transition: all 0.2s;
-          }
-          .lang-switcher a:hover {
-              background: #f0f0f0;
-          }
-          .lang-switcher a.active {
-              background: #2E7D32;
-              color: white;
-              border-color: #2E7D32;
-          }
-          h1 {
-              color: #2E7D32;
-              margin-bottom: 10px;
-              font-size: 28px;
-          }
-          .last-updated {
-              color: #666;
-              font-size: 14px;
-              margin-bottom: 30px;
-          }
-          h2 {
-              color: #1B5E20;
-              margin-top: 30px;
-              margin-bottom: 15px;
-              font-size: 20px;
-          }
-          p, li {
-              margin-bottom: 12px;
-              color: #444;
-          }
-          ul {
-              padding-left: 25px;
-              margin-bottom: 15px;
-          }
-          .warning {
-              background: #FFF3E0;
-              padding: 15px;
-              border-radius: 8px;
-              margin: 20px 0;
-              border-left: 4px solid #FF9800;
-          }
-          .highlight {
-              background: #E8F5E9;
-              padding: 15px;
-              border-radius: 8px;
-              margin: 20px 0;
-              border-left: 4px solid #2E7D32;
-          }
-          .contact {
-              margin-top: 40px;
-              padding-top: 20px;
-              border-top: 1px solid #eee;
-          }
-          a {
-              color: #2E7D32;
-          }
-      </style>
-  </head>
-  <body>
-      <div class="container">
-          <div class="lang-switcher">
-              <a href="terms-of-service.html" class="active">English</a>
-              <a href="terms-of-service-tr.html">Türkçe</a>
-              <a href="terms-of-service-ar.html">العربية</a>
-              <a href="terms-of-service-id.html">Indonesia</a>
-              <a href="terms-of-service-ms.html">Melayu</a>
-          </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Is It Halal</title>
+    <style>
+        :root {
+            --primary: #1B5E20;
+            --text: #333;
+            --bg: #f5f5f5;
+            --card-bg: #fff;
+            --warning-bg: #fff3e0;
+            --warning-border: #ff9800;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        .last-updated {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: var(--primary);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        p { margin-bottom: 15px; }
+        ul {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+        li { margin-bottom: 8px; }
+        .warning-box {
+            background: var(--warning-bg);
+            border-left: 4px solid var(--warning-border);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .warning-box strong {
+            color: #e65100;
+        }
+        .contact-box {
+            background: var(--bg);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+        .contact-box a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .lang-selector {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .lang-selector a {
+            margin-left: 10px;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .lang-selector a.active {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .caps {
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lang-selector">
+            <a href="terms-of-service.html" class="active">EN</a>
+            <a href="terms-of-service-tr.html">TR</a>
+            <a href="terms-of-service-ar.html">AR</a>
+        </div>
 
-          <h1>Terms of Service</h1>
-          <p class="last-updated">Last Updated: March 31, 2026</p>
+        <h1>Terms of Service</h1>
+        <p class="last-updated">Last updated: April 18, 2026</p>
 
-          <div class="warning">
-              <strong>Important Religious Disclaimer:</strong> This app provides information based on general Islamic
-  sources and scholarly opinions. It does NOT issue religious fatwas. For definitive religious rulings, please consult a
-   qualified Islamic scholar.
-          </div>
+        <h2>1. Acceptance of Terms</h2>
+        <p>By downloading, installing, or using the Is It Halal mobile application ("App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the App.</p>
 
-          <h2>1. Acceptance of Terms</h2>
-          <p>By downloading, installing, or using the "Is It Halal?" application, you agree to be bound by these Terms
-  of Service. If you do not agree, please do not use the app.</p>
+        <h2>2. Description of Service</h2>
+        <p>Is It Halal provides information about the halal status of food products based on ingredient analysis. The App uses image recognition and artificial intelligence to identify ingredients and classify them according to general Islamic dietary guidelines.</p>
 
-          <h2>2. Service Description</h2>
-          <p>"Is It Halal?" is an AI-powered mobile application that:</p>
-          <ul>
-              <li>Analyzes product ingredient lists from photos</li>
-              <li>Provides halal/haram classification based on Islamic dietary guidelines</li>
-              <li>Supports multiple schools of thought (madhabs)</li>
-              <li>Offers information about E-numbers and food additives</li>
-          </ul>
+        <h2>3. Important Disclaimer</h2>
+        <div class="warning-box">
+            <strong>⚠️ WARNING:</strong> This App provides information based on general Islamic sources and is intended for educational and informational purposes only. It does NOT provide religious rulings (fatwa) and should NOT be used as the sole basis for dietary decisions.
+        </div>
+        <p>For definitive rulings on food permissibility, please consult a qualified Islamic scholar (Mufti) or recognized halal certification authority. The developers of this App do not claim religious authority.</p>
 
-          <h2>3. Important Limitations</h2>
-          <div class="highlight">
-              <p><strong>Please understand these limitations:</strong></p>
-              <ul>
-                  <li>Our classifications are based on ingredient lists only - we cannot verify slaughter methods,
-  cross-contamination, or manufacturing processes</li>
-                  <li>AI-powered text recognition may occasionally make errors</li>
-                  <li>Ingredient databases may not be complete for all products worldwide</li>
-                  <li>Some ingredients have differing scholarly opinions - we indicate these as "Mashbooh"
-  (doubtful)</li>
-              </ul>
-          </div>
+        <h2>4. Accuracy and Limitations</h2>
+        <p>While we strive for accuracy, we cannot guarantee that:</p>
+        <ul>
+            <li>All ingredients will be correctly identified</li>
+            <li>All classifications are 100% accurate</li>
+            <li>The database is complete and up-to-date</li>
+            <li>Manufacturing processes or cross-contamination are detected</li>
+        </ul>
+        <p>Ingredient sources and manufacturing processes may change without notice by food manufacturers. Always check product labels and halal certifications.</p>
 
-          <h2>4. User Responsibilities</h2>
-          <p>As a user, you agree to:</p>
-          <ul>
-              <li>Take clear, legible photos of ingredient lists</li>
-              <li>Verify critical decisions with qualified scholars when in doubt</li>
-              <li>Report any errors or inaccuracies you discover</li>
-              <li>Not use the app for commercial certification purposes</li>
-              <li>Not attempt to reverse-engineer or manipulate the app</li>
-          </ul>
+        <h2>5. User Responsibilities</h2>
+        <p>You agree to:</p>
+        <ul>
+            <li>Use the App in accordance with applicable laws</li>
+            <li>Submit accurate reports if you believe information is incorrect</li>
+            <li>Not use the App for commercial purposes without permission</li>
+            <li>Not attempt to reverse engineer or modify the App</li>
+        </ul>
 
-          <h2>5. Subscription and Payments</h2>
-          <p><strong>Free Tier:</strong></p>
-          <ul>
-              <li>3 analyses per day (after watching a rewarded video)</li>
-              <li>Banner advertisements displayed</li>
-          </ul>
-          <p><strong>Premium Subscription:</strong></p>
-          <ul>
-              <li>Unlimited analyses</li>
-              <li>Ad-free experience</li>
-              <li>Sync history across devices</li>
-              <li>Billed weekly ($2.49), monthly ($7.49), or yearly ($59.99)</li>
-          </ul>
-          <p>Subscriptions automatically renew unless cancelled at least 24 hours before the end of the current period.
-  Manage subscriptions through your App Store or Google Play account.</p>
+        <h2>6. Subscriptions and Payments</h2>
+        <p>The App offers optional Premium subscriptions with the following terms:</p>
+        <ul>
+            <li>Subscriptions automatically renew unless canceled</li>
+            <li>Cancel at least 24 hours before the renewal date</li>
+            <li>Manage subscriptions through your App Store or Google Play account</li>
+            <li>Refunds are subject to App Store/Google Play policies</li>
+        </ul>
 
-          <h2>6. Refund Policy</h2>
-          <p>Refunds are handled by Apple App Store or Google Play Store according to their respective policies. We do
-  not process refunds directly.</p>
+        <h2>7. Intellectual Property</h2>
+        <p>The App, including its design, features, and content, is owned by Is It Halal and is protected by copyright and other intellectual property laws. You may not copy, modify, or distribute the App or its content without permission.</p>
 
-          <h2>7. Intellectual Property</h2>
-          <p>The app, including its design, features, ingredient database, and classification algorithms, is owned by
-  ByteLuna Labs. You may not copy, modify, or distribute any part of the app without permission.</p>
+        <h2>8. Limitation of Liability</h2>
+        <p class="caps"><strong>TO THE MAXIMUM EXTENT PERMITTED BY LAW, IS IT HALAL AND ITS DEVELOPERS SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING FROM YOUR USE OF THE APP, INCLUDING BUT NOT LIMITED TO DIETARY DECISIONS MADE BASED ON THE APP'S INFORMATION.</strong></p>
 
-          <h2>8. Disclaimer of Warranties</h2>
-          <p>THE APP IS PROVIDED "AS IS" WITHOUT WARRANTIES OF ANY KIND. We do not guarantee:</p>
-          <ul>
-              <li>100% accuracy of ingredient recognition or classification</li>
-              <li>Uninterrupted or error-free service</li>
-              <li>That the app will meet all your requirements</li>
-          </ul>
+        <h2>9. Indemnification</h2>
+        <p>You agree to indemnify and hold harmless Is It Halal and its developers from any claims, damages, or expenses arising from your use of the App or your violation of these Terms.</p>
 
-          <h2>9. Limitation of Liability</h2>
-          <p>ByteLuna Labs shall not be liable for any indirect, incidental, special, or consequential damages arising
-  from your use of the app. Our total liability shall not exceed the amount you paid for the app in the past 12
-  months.</p>
+        <h2>10. Changes to Terms</h2>
+        <p>We may update these Terms from time to time. Continued use of the App after changes constitutes acceptance of the new Terms.</p>
 
-          <h2>10. User-Generated Reports</h2>
-          <p>When you report an error or suggest a correction:</p>
-          <ul>
-              <li>We may use your feedback to improve our database</li>
-              <li>You grant us the right to use the information provided</li>
-              <li>We will review reports but cannot guarantee all suggestions will be implemented</li>
-          </ul>
+        <h2>11. Governing Law</h2>
+        <p>These Terms shall be governed by and construed in accordance with the laws of the jurisdiction in which the App developer is located, without regard to conflict of law principles.</p>
 
-          <h2>11. Termination</h2>
-          <p>We reserve the right to terminate or suspend your access to the app for violations of these terms or for
-  any other reason at our discretion.</p>
+        <h2>12. Age Requirements</h2>
+        <p>You must be at least 13 years old to use this App. By using the App, you represent and warrant that you are at least 13 years of age. If you are under 13 years old, you are not permitted to use this App.</p>
 
-          <h2>12. Changes to Terms</h2>
-          <p>We may modify these terms at any time. Continued use of the app after changes constitutes acceptance of the
-   new terms.</p>
-
-          <h2>13. Governing Law</h2>
-  <p>These terms shall be governed by the applicable laws of your jurisdiction. Any disputes arising from the use of
-  this app shall be resolved through appropriate legal channels in your local jurisdiction.</p>
-
-          <div class="contact">
-              <h2>14. Contact</h2>
-              <p>For questions about these terms:</p>
-              <p><strong>Email:</strong> <a href="mailto:bytelunalabs@gmail.com">bytelunalabs@gmail.com</a></p>
-              <p><strong>Developer:</strong> ByteLuna Labs</p>
-          </div>
-      </div>
-  </body>
-  </html>
+        <h2>13. Contact</h2>
+        <p>For questions about these Terms, please contact us:</p>
+        <div class="contact-box">
+            <a href="mailto:bytelunalabs@gmail.com">bytelunalabs@gmail.com</a>
+        </div>
+    </div>
+</body>
+</html>
